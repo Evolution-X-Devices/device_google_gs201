@@ -5,6 +5,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# DeviceAsWebcam
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/lib64/libjni_deviceAsWebcam.so \
+    system/priv-app/DeviceAsWebcam/DeviceAsWebcam.apk \
+    system/priv-app/DeviceAsWebcam/lib/arm64/libjni_deviceAsWebcam.so
+
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
