@@ -146,6 +146,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	telephony.active_modems.max_count=2
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+	system/etc/permissions/privapp_allowlist_com.google.android.ext.services.xml
+
 # HWUI
 TARGET_USES_VULKAN = true
 
