@@ -69,8 +69,6 @@
         <permission name="android.permission.ACTIVITY_RECOGNITION" fixed="false"/>
         <!-- Notifications -->
         <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
-        <!-- Used by Bluetooth Module to collect bluetooth info -->
-        <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false"/>
     </exception>
 
     <exception
@@ -84,6 +82,8 @@
         <!-- Call logs -->
         <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
         <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+        <!-- Calendars -->
+        <permission name="android.permission.READ_CALENDAR" fixed="false"/>
         <!-- Used to set up a Wi-Fi P2P network -->
         <permission name="android.permission.NEARBY_WIFI_DEVICES" fixed="false"/>
         <!-- Notifications -->
@@ -178,6 +178,7 @@
     <exception
         package="com.google.android.apps.privacy.wildlife">
         <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+        <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
     </exception>
 </exceptions>
 
