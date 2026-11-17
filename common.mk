@@ -379,7 +379,6 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
     FrameworkResOverlayProductGs201 \
     FrameworkResOverlayVendorGs201 \
-    GazeOverlay \
     PixelConnectivityOverlay2023_midyear \
     PixelNfcOverlayCommon \
     PixelTetheringOverlay2021 \
@@ -406,6 +405,7 @@ endif
 
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
+    GazeOverlay \
     LineageSdkOverlayGs201 \
     SettingsOverlayGs201
 endif
