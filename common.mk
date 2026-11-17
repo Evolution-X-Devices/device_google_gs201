@@ -376,15 +376,6 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay \
     FrameworkResOverlayProductGs201 \
     FrameworkResOverlayVendorGs201 \
-    GlanceableHubConfigOverlay \
-    GlanceableHubSettingsConfigOverlay \
-    GlanceableHubSettingsConfigOverlay2022 \
-    GlanceableHubSysuiConfigOverlay \
-    GoogleConfigOverlay \
-    GooglePermissionControllerSafetyCenterOverlay \
-    PixelConfigOverlay2019 \
-    PixelConfigOverlay2021 \
-    PixelConfigOverlayCommon \
     PixelConnectivityOverlay2023_midyear \
     PixelNfcOverlayCommon \
     PixelTetheringOverlay2021 \
@@ -395,6 +386,19 @@ PRODUCT_PACKAGES += \
     TeleServiceOverlayProductGs201 \
     TeleServiceOverlayVendorGs201 \
     TelephonyProviderOverlayProductGs201
+
+ifneq ($(WITH_GMS),true)
+PRODUCT_PACKAGES += \
+    GlanceableHubConfigOverlayVanilla \
+    GlanceableHubSettingsConfigOverlayVanilla \
+    GlanceableHubSettingsConfigOverlay2022Vanilla \
+    GlanceableHubSysuiConfigOverlayVanilla \
+    GoogleConfigOverlayVanilla \
+    GooglePermissionControllerSafetyCenterOverlayVanilla \
+    PixelConfigOverlay2019Vanilla \
+    PixelConfigOverlay2021Vanilla \
+    PixelConfigOverlayCommonVanilla
+endif
 
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
