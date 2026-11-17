@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "PixelConfigOverlay2021",
+    name: "PixelConfigOverlayCommonVanilla",
     product_specific: true,
 }
